@@ -7,6 +7,9 @@
 
     <!-- dependencies -->
     <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <!-- <script src="bower_components/underscore.string/escapeHTML.js"></script> -->
     <!-- your scripts -->
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
@@ -15,6 +18,20 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
+      <!-- <form> -->
+        <div id='settings'>
+          <div id='currentName'>Anonymous User</div>
+          <div id='currentRoom'>Viewing All Messages</div>
+        </div>
+        <input type='text' id='userNameInput' placeholder="set your username"/>
+        <input type='text' id='roomInput' placeholder="specify a chatroom"/>
+        <input type='text' id='messageInput' placeholder="type message here"/>
+        <!-- <input type="submit" id="addMessage"></input> -->
+        <button id="addMessage">add message</button>
+        <button id="filter">filter room</button>
+        <button id="showAll">show all messages</button>
+        <div id="feed"></div>
+      <!-- </form> -->
     </div>
   </body>
 </html>
