@@ -89,12 +89,13 @@ form input[type=text] {
     padding: 10px;
 }
 
-.timeStamp {
+.time-stamp {
     float:right;
     /*text-align: right;*/
     font-size: 10px;
     color: "gray";
 }
+
 
 .friend {
     border: 3px solid black;
