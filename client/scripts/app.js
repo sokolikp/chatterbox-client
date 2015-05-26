@@ -1,4 +1,3 @@
-// var app = {};
 var messages;
 var friends = {};
 var preferences = {
@@ -47,6 +46,7 @@ $(document).ready(function() {
             $message.addClass('friend');
           }
           $('#feed').append($message);
+          $('#currentRoom').text('Viewing ' + preferences.currentRoom);
         }
       } else {
         var $message = $('<div class="chat"></div>');
@@ -113,13 +113,10 @@ $(document).ready(function() {
   });
 
   $('body').on('click', '.username', function() {
-    console.log('hi');
     var name = $(this).text();
-    console.log('clicked ', name);
     $(this).closest('.chat').addClass('friend');
     friends[name] = true;
     showNewMessages();
   });
-
 });
 

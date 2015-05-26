@@ -97,6 +97,6 @@ form input[type=text] {
 }
 
 .friend {
-    background-color: pink;
+    border: 3px solid black;
     font-weight: 900;
 }
